@@ -1105,12 +1105,34 @@
 				}
 
 			}
-
-		#banner a {
-			color: rgba(255, 255, 255, 0.75);
-			text-decoration: none;
-			border-bottom: 1px dotted;
-		}
+			
+			#banner a{
+				-moz-appearance: none;
+				-webkit-appearance: none;
+				-ms-appearance: none;
+				appearance: none;
+				-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+				-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+				-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+				transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+				background-color: #ffffff00;
+				border-radius: 4px;
+				border: 0;
+				color: #242424;
+				cursor: pointer;
+				display: inline-block;
+				font-weight: 200;
+				height: 2.85em;
+				line-height: 2.95em;
+				padding: 0 1.5em;
+				text-align: center;
+				text-decoration: none;
+				white-space: nowrap;
+			}
+	
+			#banner a:hover{
+				border: 2px;
+			}
 
 		#banner video {
 			-moz-transform: translateX(50%) translateY(50%);
